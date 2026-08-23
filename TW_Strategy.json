@@ -1,13 +1,14 @@
 {
   "meta": {
     "date": "2026-08-23",
-    "time": "09:32:52",
+    "time": "13:19:58",
     "timezone": "Asia/Taipei",
     "universe": "tickers.json 台股",
     "scanned": 325,
-    "success": 324,
-    "failed_count": 1,
+    "success": 323,
+    "failed_count": 2,
     "failed": [
+      "8210",
       "2456"
     ],
     "today_pick_count": 91,
@@ -19,7 +20,7 @@
   "picks": [
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "2428",
       "name": "興勤",
@@ -41,7 +42,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "2634",
       "name": "漢翔",
@@ -63,7 +64,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "4977",
       "name": "眾達-KY",
@@ -85,7 +86,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "5483",
       "name": "中美晶",
@@ -107,7 +108,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "6173",
       "name": "信昌電",
@@ -129,7 +130,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "6274",
       "name": "台燿",
@@ -151,7 +152,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "6426",
       "name": "統新",
@@ -173,7 +174,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "6451",
       "name": "訊芯-KY",
@@ -195,7 +196,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "2301",
       "name": "光寶科",
@@ -225,7 +226,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "2313",
       "name": "華通",
@@ -255,7 +256,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "2345",
       "name": "智邦",
@@ -285,7 +286,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "2455",
       "name": "全新",
@@ -315,7 +316,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "3006",
       "name": "晶豪科",
@@ -350,7 +351,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "3008",
       "name": "大立光",
@@ -380,7 +381,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "3037",
       "name": "欣興",
@@ -415,7 +416,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "3081",
       "name": "聯亞",
@@ -450,7 +451,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "3189",
       "name": "景碩",
@@ -485,7 +486,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "3234",
       "name": "光環",
@@ -520,7 +521,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "3406",
       "name": "玉晶光",
@@ -550,7 +551,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "3450",
       "name": "聯鈞",
@@ -580,7 +581,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "3532",
       "name": "台勝科",
@@ -610,7 +611,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "3665",
       "name": "貿聯-KY",
@@ -640,7 +641,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "3673",
       "name": "TPK-KY",
@@ -670,7 +671,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "3711",
       "name": "日月光投控",
@@ -700,7 +701,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "4541",
       "name": "晟田",
@@ -735,7 +736,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "4931",
       "name": "新盛力",
@@ -770,7 +771,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "4938",
       "name": "和碩",
@@ -800,7 +801,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "5347",
       "name": "世界",
@@ -830,7 +831,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "6213",
       "name": "聯茂",
@@ -865,7 +866,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "6274",
       "name": "台燿",
@@ -895,7 +896,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "6672",
       "name": "騰輝",
@@ -925,7 +926,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "8021",
       "name": "尖點",
@@ -955,7 +956,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "8271",
       "name": "宇瞻",
@@ -985,7 +986,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "2049",
       "name": "上銀",
@@ -1020,7 +1021,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "2303",
       "name": "聯電",
@@ -1050,7 +1051,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "2313",
       "name": "華通",
@@ -1090,7 +1091,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "2344",
       "name": "華邦電",
@@ -1120,7 +1121,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "2356",
       "name": "英業達",
@@ -1150,7 +1151,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "2368",
       "name": "金像電",
@@ -1180,7 +1181,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "2383",
       "name": "台光電",
@@ -1210,7 +1211,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "2392",
       "name": "正崴",
@@ -1245,7 +1246,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "2428",
       "name": "興勤",
@@ -1280,7 +1281,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "2441",
       "name": "超豐",
@@ -1310,7 +1311,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "2478",
       "name": "大毅",
@@ -1345,7 +1346,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "2630",
       "name": "亞航",
@@ -1380,7 +1381,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "3008",
       "name": "大立光",
@@ -1410,7 +1411,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "3016",
       "name": "嘉晶",
@@ -1445,7 +1446,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "3042",
       "name": "晶技",
@@ -1480,7 +1481,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "3044",
       "name": "健鼎",
@@ -1520,7 +1521,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "3163",
       "name": "波若威",
@@ -1550,7 +1551,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "3189",
       "name": "景碩",
@@ -1580,7 +1581,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "3221",
       "name": "台嘉碩",
@@ -1620,7 +1621,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "3374",
       "name": "精材",
@@ -1655,7 +1656,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "3406",
       "name": "玉晶光",
@@ -1685,7 +1686,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "3443",
       "name": "創意",
@@ -1720,7 +1721,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "3450",
       "name": "聯鈞",
@@ -1750,7 +1751,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "3481",
       "name": "群創",
@@ -1780,7 +1781,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "3532",
       "name": "台勝科",
@@ -1810,7 +1811,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "3665",
       "name": "貿聯-KY",
@@ -1845,7 +1846,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "3714",
       "name": "富采",
@@ -1875,7 +1876,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "4541",
       "name": "晟田",
@@ -1910,7 +1911,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "4906",
       "name": "正文",
@@ -1945,7 +1946,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "4919",
       "name": "新唐",
@@ -1975,7 +1976,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "4938",
       "name": "和碩",
@@ -2005,7 +2006,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "4958",
       "name": "臻鼎-KY",
@@ -2040,7 +2041,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "4977",
       "name": "眾達-KY",
@@ -2070,7 +2071,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "4979",
       "name": "華星光",
@@ -2105,7 +2106,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "5371",
       "name": "中光電",
@@ -2135,7 +2136,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "5439",
       "name": "高技",
@@ -2175,7 +2176,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "5483",
       "name": "中美晶",
@@ -2215,7 +2216,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "6207",
       "name": "雷科",
@@ -2255,7 +2256,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "6257",
       "name": "矽格",
@@ -2290,7 +2291,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "6271",
       "name": "同欣電",
@@ -2325,7 +2326,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "6274",
       "name": "台燿",
@@ -2355,7 +2356,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "6278",
       "name": "台表科",
@@ -2390,7 +2391,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "6488",
       "name": "環球晶",
@@ -2425,7 +2426,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "6531",
       "name": "愛普",
@@ -2460,7 +2461,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "6672",
       "name": "騰輝",
@@ -2490,7 +2491,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "6770",
       "name": "力積電",
@@ -2530,7 +2531,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "8021",
       "name": "尖點",
@@ -2560,7 +2561,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "8039",
       "name": "台虹",
@@ -2590,7 +2591,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "8046",
       "name": "南電",
@@ -2620,7 +2621,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "8103",
       "name": "瀚荃",
@@ -2655,7 +2656,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "8110",
       "name": "華東",
@@ -2690,7 +2691,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "2451",
       "name": "創見",
@@ -2711,7 +2712,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "3163",
       "name": "波若威",
@@ -2732,7 +2733,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "3260",
       "name": "威剛",
@@ -2753,7 +2754,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "6278",
       "name": "台表科",
@@ -2774,7 +2775,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "3026",
       "name": "禾伸堂",
@@ -2795,7 +2796,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "3044",
       "name": "健鼎",
@@ -2816,7 +2817,7 @@
     },
     {
       "date": "2026-08-23",
-      "time": "09:32:52",
+      "time": "13:19:58",
       "timezone": "Asia/Taipei",
       "symbol": "6426",
       "name": "統新",
