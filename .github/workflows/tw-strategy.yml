@@ -2,8 +2,8 @@ name: Daily TW Strategy
 
 on:
   schedule:
-    # 台灣時間每天 15:00（台股 13:30 收盤後）= UTC 07:00
-    - cron: "0 7 * * *"
+    # 台灣時間每天 13:00 = UTC 05:00
+    - cron: "0 5 * * *"
   workflow_dispatch:
 
 permissions:
