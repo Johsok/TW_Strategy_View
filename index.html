@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TW Strategy View｜台股日K策略選股</title>
+  <style>
+    :root {
+      --bg: #070b14;
+      --bg-2: #10182a;
+      --card: #151d31;
+      --line: #2a3a5d;
+      --text: #f4f7ff;
+      --muted: #a9b7d6;
+      --buy: #00ffa3;
+      --buy-dim: rgba(0, 255, 163, 0.16);
+      --short: #ff3d6e;
+      --short-dim: rgba(255, 61, 110, 0.16);
+      --s1: #00e5ff;
+      --s2: #ffd400;
+      --s3: #d57bff;
+      --s4: #ff9f43;
+      --glow: 0 0 24px rgba(0, 229, 255, 0.18);
+    }
+
+    * { box-sizing: border-box; }
+
+    /* 頂部漸層捲動進度條（同 US-FinanceView） */
+    #scroll-progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 4px;
+      background: linear-gradient(90deg, #00f260, #0575e6);
+      z-index: 99999;
+      transition: width 0.15s ease-out;
+      box-shadow: 0 0 15px rgba(5, 117, 230, 0.7);
+      pointer-events: none;
+    }
+
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      background:
+        radial-gradient(1200px 500px at 10% -10%, rgba(0, 229, 255, 0.16), transparent 50%),
+        radial-gradient(900px 400px at 100% 0%, rgba(213, 123, 255, 0.14), transparent 46%),
+        var(--bg);
+      color: var(--text);
+      font-family: "Segoe UI", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+      font-size: 16px;
+      line-height: 1.55;
+    }
+
+    .wrap {
+      width: min(1640px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 28px 0 64px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      align-items: flex-end;
+      margin-bottom: 28px;
+      flex-wrap: wrap;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 36px;
+      letter-spacing: 0.04em;
+      text-shadow: var(--glow);
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .stamp {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 16px 20px;
+      min-width: 280px;
+    }
+
+    .stamp b {
+      display: block;
+      color: var(--s1);
+      font-size: 22px;
+      margin-top: 4px;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 14px;
+      margin-bottom: 22px;
+    }
+
+    .stat {
+      background: linear-gradient(180deg, #1b2640, var(--card));
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 18px 16px;
+    }
+
+    .stat span {
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .stat strong {
+      display: block;
+      margin-top: 8px;
+      font-size: 32px;
+      letter-spacing: 0.02em;
+    }
+
+    .stat.s1 strong { color: var(--s1); }
+    .stat.s2 strong { color: var(--s2); }
+    .stat.s3 strong { color: var(--s3); }
+    .stat.s4 strong { color: var(--s4); }
+    .stat.all strong { color: #ffffff; }
+
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 18px;
+      align-items: center;
+    }
+
+    button.filter, button.btn-latest, input[type="search"], input[type="date"] {
+      font: inherit;
+      font-size: 16px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: var(--bg-2);
+      color: var(--text);
+      padding: 10px 16px;
+      cursor: pointer;
+    }
+
+    button.filter.active {
+      border-color: currentColor;
+      box-shadow: 0 0 0 1px currentColor inset;
+    }
+
+    button[data-key="all"].active { color: #fff; }
+    button[data-key="S1"].active { color: var(--s1); }
+    button[data-key="S2"].active { color: var(--s2); }
+    button[data-key="S3"].active { color: var(--s3); }
+    button[data-key="S4"].active { color: var(--s4); }
+    button[data-key="buy"].active { color: var(--buy); }
+    button[data-key="short"].active { color: var(--short); }
+
+    input[type="search"] {
+      min-width: 220px;
+      cursor: text;
+      outline: none;
+    }
+
+    input[type="search"]:focus,
+    input[type="date"]:focus {
+      border-color: var(--s1);
+    }
+
+    .date-range {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+      margin-right: 6px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .date-range label {
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .date-range input[type="date"] {
+      cursor: text;
+      outline: none;
+      color-scheme: dark;
+      min-width: 158px;
+    }
+
+    button.btn-latest {
+      color: var(--s1);
+    }
+
+    button.btn-latest.active {
+      border-color: var(--s1);
+      box-shadow: 0 0 0 1px var(--s1) inset;
+    }
+
+    .table-shell {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--card);
+      box-shadow: var(--glow);
+    }
+
+    .table-meta {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: center;
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .table-meta b { color: var(--text); }
+
+    /* 不用內捲軸：表格完整列出，捲動交給頁面外捲軸 */
+    .table-wrap {
+      overflow: visible;
+    }
+
+    table.picks {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      min-width: 1400px;
+      font-size: 15px;
+    }
+
+    .picks thead th {
+      position: sticky;
+      top: 0;
+      z-index: 3;
+      background: linear-gradient(180deg, #223056, #1a243c);
+      color: #d7e4ff;
+      font-weight: 700;
+      text-align: center;
+      padding: 13px 14px;
+      white-space: nowrap;
+      border-bottom: 1px solid var(--line);
+      letter-spacing: 0.04em;
+    }
+
+    .picks thead th:first-child {
+      left: 0;
+      z-index: 4;
+    }
+
+    .picks tbody td.num {
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .picks tbody td {
+      padding: 12px 14px;
+      border-bottom: 1px solid rgba(42, 58, 93, 0.72);
+      vertical-align: top;
+    }
+
+    .picks tbody tr {
+      background: var(--card);
+      transition: background 0.15s ease;
+    }
+
+    .picks tbody tr:nth-child(even) {
+      background: #121a2e;
+    }
+
+    .picks tbody tr:hover {
+      background: rgba(0, 229, 255, 0.08);
+    }
+
+    .picks tbody tr.buy td:first-child,
+    .picks tbody tr.short td:first-child {
+      box-shadow: inset 4px 0 0 var(--row-accent);
+    }
+
+    .picks tbody tr.buy { --row-accent: var(--buy); }
+    .picks tbody tr.short { --row-accent: var(--short); }
+
+    /* 卡片不再用 overflow 裁切，改由最後一列自行收圓角 */
+    .picks tbody tr:last-child td { border-bottom: 0; }
+    .picks tbody tr:last-child td:first-child { border-bottom-left-radius: 18px; }
+    .picks tbody tr:last-child td:last-child { border-bottom-right-radius: 18px; }
+
+    .picks tbody td.symbol {
+      position: sticky;
+      left: 0;
+      z-index: 1;
+      min-width: 92px;
+    }
+
+    .picks tbody tr:nth-child(odd) td.symbol { background: var(--card); }
+    .picks tbody tr:nth-child(even) td.symbol { background: #121a2e; }
+    .picks tbody tr:hover td.symbol { background: #173044; }
+
+    .symbol a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: 0.03em;
+    }
+
+    .symbol a:hover { color: var(--s1); }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      padding: 4px 10px;
+      font-weight: 700;
+      font-size: 13px;
+      white-space: nowrap;
+    }
+
+    .badge.s1 { color: var(--s1); background: rgba(0, 229, 255, 0.14); }
+    .badge.s2 { color: var(--s2); background: rgba(255, 212, 0, 0.14); }
+    .badge.s3 { color: var(--s3); background: rgba(213, 123, 255, 0.16); }
+    .badge.s4 { color: var(--s4); background: rgba(255, 159, 67, 0.16); }
+    .badge.buy { color: var(--buy); background: var(--buy-dim); }
+    .badge.short { color: var(--short); background: var(--short-dim); }
+
+    .picks th.cond,
+    .picks td.cond {
+      min-width: 640px;
+      width: 28%;
+    }
+
+    .desc {
+      margin: 0;
+      max-width: 640px;
+      color: #e8eeff;
+      font-size: 14px;
+      line-height: 1.45;
+    }
+
+    .date-cell {
+      color: var(--muted);
+      white-space: nowrap;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .pct.up { color: var(--buy); font-weight: 700; }
+    .pct.down { color: var(--short); font-weight: 700; }
+    .muted-dash { color: #5d6d90; }
+
+    .metrics {
+      display: grid;
+      gap: 4px;
+      min-width: 220px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .metrics b { color: #fff; font-weight: 700; }
+
+    .empty, .error {
+      background: var(--card);
+      border: 1px dashed var(--line);
+      border-radius: 20px;
+      padding: 36px 24px;
+      text-align: center;
+      font-size: 18px;
+      color: var(--muted);
+    }
+
+    .error { color: #ffb3c4; border-color: var(--short); }
+
+    @media (max-width: 900px) {
+      .stats { grid-template-columns: 1fr 1fr; }
+      h1 { font-size: 30px; }
+      .picks { font-size: 14px; }
+    }
+  </style>
+</head>
+<body>
+  <div id="scroll-progress-bar"></div>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>TW Strategy View</h1>
+        <p class="subtitle">tickers.json 台股日K 策略選股｜S1 反轉　S2 影線　S3 爆量　S4 近2日±30%</p>
+      </div>
+      <div class="stamp" id="stamp">載入中…</div>
+    </header>
+
+    <section class="stats" id="stats"></section>
+    <section class="toolbar" id="toolbar"></section>
+    <section class="grid" id="grid"></section>
+  </div>
+
+  <script>
+    /**
+     * 載入並渲染 TW_Strategy.json（預設只顯示最新一日）。
+     * @returns {Promise<void>}
+     */
+    async function loadStrategy() {
+      const grid = document.getElementById("grid");
+      try {
+        const res = await fetch(`TW_Strategy.json?t=${Date.now()}`, { cache: "no-store" });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = await res.json();
+        render(data);
+      } catch (err) {
+        grid.innerHTML = `<div class="error">無法讀取 TW_Strategy.json。請用本機伺服器或 GitHub Pages 開啟（不要直接雙擊 HTML）。<br>${err}</div>`;
+      }
+    }
+
+    /**
+     * 取出選股的台灣日期（YYYY-MM-DD）。
+     * @param {object|string|null|undefined} pick 選股或日期字串
+     * @returns {string}
+     */
+    function pickDate(pick) {
+      const value = typeof pick === "string" ? pick : pick && pick.date;
+      return String(value || "").slice(0, 10);
+    }
+
+    /**
+     * 由 picks 取出排序後的不重複日期。
+     * @param {object[]} picks 全部選股
+     * @returns {string[]}
+     */
+    function uniqueSortedDates(picks) {
+      const set = new Set();
+      for (const item of picks) {
+        const day = pickDate(item);
+        if (/^\d{4}-\d{2}-\d{2}$/.test(day)) set.add(day);
+      }
+      return [...set].sort();
+    }
+
+    /**
+     * 判斷日期是否落在起迄範圍（含兩端）。
+     * @param {string} day YYYY-MM-DD
+     * @param {string} from 起日
+     * @param {string} to 迄日
+     * @returns {boolean}
+     */
+    function inDateRange(day, from, to) {
+      if (!day) return false;
+      if (from && day < from) return false;
+      if (to && day > to) return false;
+      return true;
+    }
+
+    /**
+     * 將資料畫到畫面上。預設只顯示最新一日，可用日期範圍查舊資料。
+     * @param {object} data JSON 內容
+     */
+    function render(data) {
+      const meta = data.meta || {};
+      const allPicks = Array.isArray(data.picks) ? data.picks : [];
+      const dates = uniqueSortedDates(allPicks);
+      const latestDate = meta.date || (dates.length ? dates[dates.length - 1] : "");
+      const minDate = dates.length ? dates[0] : latestDate;
+      const maxCandidates = [latestDate, ...dates].filter(Boolean).sort();
+      const maxDate = maxCandidates.length ? maxCandidates[maxCandidates.length - 1] : "";
+
+      const stamp = document.getElementById("stamp");
+      const dateText = meta.date && meta.time
+        ? `${meta.date} ${meta.time}`
+        : "尚未產生選股";
+      stamp.innerHTML = `台灣選股時間<b>${dateText}</b>時區 ${meta.timezone || "Asia/Taipei"}`;
+
+      /**
+       * 依策略／方向統計筆數。
+       * @param {object[]} list 選股清單
+       * @param {string|null} strategy 策略代碼
+       * @param {string|null} side 方向
+       * @returns {number}
+       */
+      const count = (list, strategy, side) => list.filter((p) =>
+        (!strategy || p.strategy === strategy) && (!side || p.side === side)
+      ).length;
+
+      const toolbar = document.getElementById("toolbar");
+      const dateAttr = minDate && maxDate
+        ? `min="${esc(minDate)}" max="${esc(maxDate)}"`
+        : "";
+      toolbar.innerHTML = `
+        <div class="date-range">
+          <label for="dateFrom">日期範圍</label>
+          <input type="date" id="dateFrom" ${dateAttr} value="${esc(latestDate)}" />
+          <span>至</span>
+          <input type="date" id="dateTo" ${dateAttr} value="${esc(latestDate)}" />
+          <button type="button" class="btn-latest active" id="latestDay">最新一日</button>
+        </div>
+        <button class="filter active" data-key="all">全部 0</button>
+        <button class="filter" data-key="S1">S1 0</button>
+        <button class="filter" data-key="S2">S2 0</button>
+        <button class="filter" data-key="S3">S3 0</button>
+        <button class="filter" data-key="S4">S4 0</button>
+        <button class="filter" data-key="buy">買進 0</button>
+        <button class="filter" data-key="short">賣空 0</button>
+        <input type="search" id="q" placeholder="搜尋代碼或公司" />
+      `;
+
+      const dateFromEl = document.getElementById("dateFrom");
+      const dateToEl = document.getElementById("dateTo");
+      const latestBtn = document.getElementById("latestDay");
+
+      let strategy = "all";
+      let side = "all";
+
+      /**
+       * 將起迄日限制在可查區間，並避免起日晚於迄日。
+       * @param {string} [changedId] 剛被改動的日期欄位 id
+       * @returns {{from: string, to: string}}
+       */
+      const normalizeRange = (changedId) => {
+        let from = dateFromEl.value || latestDate;
+        let to = dateToEl.value || latestDate;
+        if (minDate && from < minDate) from = minDate;
+        if (maxDate && from > maxDate) from = maxDate;
+        if (minDate && to < minDate) to = minDate;
+        if (maxDate && to > maxDate) to = maxDate;
+        if (from && to && from > to) {
+          if (changedId === "dateTo") from = to;
+          else to = from;
+        }
+        dateFromEl.value = from;
+        dateToEl.value = to;
+        const isLatest = Boolean(latestDate) && from === latestDate && to === latestDate;
+        latestBtn.classList.toggle("active", isLatest);
+        return { from, to };
+      };
+
+      /**
+       * 重繪統計、篩選按鈕與表格。
+       * @param {string} [changedId] 剛被改動的日期欄位 id
+       * @returns {void}
+       */
+      const paint = (changedId) => {
+        const { from, to } = normalizeRange(changedId);
+        const dated = allPicks.filter((p) => inDateRange(pickDate(p), from, to));
+        document.getElementById("stats").innerHTML = `
+          <article class="stat all"><span>全部訊號</span><strong>${dated.length}</strong></article>
+          <article class="stat s1"><span>S1 反轉</span><strong>${count(dated, "S1")}</strong></article>
+          <article class="stat s2"><span>S2 影線</span><strong>${count(dated, "S2")}</strong></article>
+          <article class="stat s3"><span>S3 爆量</span><strong>${count(dated, "S3")}</strong></article>
+          <article class="stat s4"><span>S4 近2日±30%</span><strong>${count(dated, "S4")}</strong></article>
+        `;
+        toolbar.querySelector('[data-key="all"]').textContent = `全部 ${dated.length}`;
+        toolbar.querySelector('[data-key="S1"]').textContent = `S1 ${count(dated, "S1")}`;
+        toolbar.querySelector('[data-key="S2"]').textContent = `S2 ${count(dated, "S2")}`;
+        toolbar.querySelector('[data-key="S3"]').textContent = `S3 ${count(dated, "S3")}`;
+        toolbar.querySelector('[data-key="S4"]').textContent = `S4 ${count(dated, "S4")}`;
+        toolbar.querySelector('[data-key="buy"]').textContent = `買進 ${count(dated, null, "buy")}`;
+        toolbar.querySelector('[data-key="short"]').textContent = `賣空 ${count(dated, null, "short")}`;
+
+        const q = (document.getElementById("q").value || "").trim().toUpperCase();
+        const rows = dated.filter((p) => {
+          const okS = strategy === "all" || p.strategy === strategy;
+          const okSide = side === "all" || p.side === side;
+          const blob = `${p.symbol} ${p.name || ""}`.toUpperCase();
+          const okQ = !q || blob.includes(q);
+          return okS && okSide && okQ;
+        });
+        const emptyText = from && to && from === to
+          ? `${from} 沒有符合條件的選股。`
+          : "此日期範圍沒有符合條件的選股。";
+        document.getElementById("grid").innerHTML = rows.length
+          ? tableHtml(rows, from, to)
+          : `<div class="empty">${emptyText}</div>`;
+      };
+
+      toolbar.addEventListener("click", (ev) => {
+        if (ev.target.closest("#latestDay")) {
+          dateFromEl.value = latestDate;
+          dateToEl.value = latestDate;
+          paint();
+          return;
+        }
+        const btn = ev.target.closest("button.filter");
+        if (!btn) return;
+        const key = btn.dataset.key;
+        if (key === "buy" || key === "short") {
+          side = side === key ? "all" : key;
+        } else {
+          strategy = key;
+        }
+        toolbar.querySelectorAll("button.filter").forEach((el) => {
+          const k = el.dataset.key;
+          el.classList.toggle("active", k === strategy || k === side || (k === "all" && strategy === "all"));
+        });
+        paint();
+      });
+      toolbar.addEventListener("change", (ev) => {
+        if (ev.target.id === "dateFrom" || ev.target.id === "dateTo") paint(ev.target.id);
+      });
+      toolbar.addEventListener("input", (ev) => {
+        if (ev.target.id === "q") paint();
+      });
+      paint();
+    }
+
+    /**
+     * 選股結果表格 HTML。
+     * @param {object[]} rows 篩選後的選股
+     * @param {string} from 起日
+     * @param {string} to 迄日
+     * @returns {string}
+     */
+    function tableHtml(rows, from, to) {
+      const rangeText = from && to && from === to
+        ? from
+        : `${from || "—"} ～ ${to || "—"}`;
+      return `
+        <div class="table-shell">
+          <div class="table-meta">
+            <span>選股日 <b>${esc(rangeText)}</b>　顯示 <b>${rows.length}</b> 筆</span>
+            <span>點代碼可開 Yahoo 股市</span>
+          </div>
+          <div class="table-wrap">
+            <table class="picks">
+              <thead>
+                <tr>
+                  <th>代碼</th>
+                  <th>策略</th>
+                  <th>方向</th>
+                  <th class="cond">條件</th>
+                  <th>收盤</th>
+                  <th>選股日</th>
+                  <th>K線日</th>
+                  <th>昨日漲跌</th>
+                  <th>今日漲跌</th>
+                  <th>驗證數據</th>
+                </tr>
+              </thead>
+              <tbody>${rows.map(rowHtml).join("")}</tbody>
+            </table>
+          </div>
+        </div>
+      `;
+    }
+
+    /**
+     * 單列選股 HTML。
+     * @param {object} pick 一筆選股
+     * @returns {string}
+     */
+    function rowHtml(pick) {
+      const sideLabel = pick.side === "buy" ? "買進" : "賣空";
+      const href = `https://tw.stock.yahoo.com/quote/${encodeURIComponent(pick.symbol)}`;
+      const m = pick.metrics || {};
+      return `
+        <tr class="${esc(pick.side)}">
+          <td class="symbol">
+            <a href="${href}" target="_blank" rel="noreferrer">${esc(pick.symbol)}</a>
+          </td>
+          <td><span class="badge ${esc(pick.strategy)}">${esc(pick.strategy)}</span></td>
+          <td><span class="badge ${esc(pick.side)}">${sideLabel}</span></td>
+          <td class="cond"><p class="desc">${esc(pick.strategy_desc || "")}</p></td>
+          <td class="num">${formatClose(pick.close)}</td>
+          <td class="date-cell">${esc(pickDate(pick))}</td>
+          <td class="date-cell">${esc(pick.signal_date || "")}</td>
+          <td class="num">${formatPct(m.yesterday_change_pct)}</td>
+          <td class="num">${formatPct(m.today_change_pct)}</td>
+          <td><div class="metrics">${formatMetrics(pick)}</div></td>
+        </tr>
+      `;
+    }
+
+    /**
+     * 格式化收盤價。
+     * @param {number|string|null|undefined} close 收盤價
+     * @returns {string}
+     */
+    function formatClose(close) {
+      if (close == null || close === "") return `<span class="muted-dash">—</span>`;
+      const n = Number(close);
+      return Number.isFinite(n) ? n.toLocaleString(undefined, { maximumFractionDigits: 4 }) : esc(String(close));
+    }
+
+    /**
+     * 格式化漲跌幅，上漲綠色、下跌紅色。
+     * @param {number|null|undefined} value 百分比
+     * @returns {string}
+     */
+    function formatPct(value) {
+      if (value == null || value === "") return `<span class="muted-dash">—</span>`;
+      const n = Number(value);
+      if (!Number.isFinite(n)) return esc(String(value));
+      const cls = n > 0 ? "up" : n < 0 ? "down" : "";
+      const sign = n > 0 ? "+" : "";
+      return `<span class="pct ${cls}">${sign}${n}%</span>`;
+    }
+
+    /**
+     * 將 metrics 轉成表格內的驗證列。
+     * @param {object} pick 一筆選股
+     * @returns {string}
+     */
+    function formatMetrics(pick) {
+      const m = pick.metrics || {};
+      const rows = [];
+      if (m.hit_count != null) rows.push(`影線次數 <b>${m.hit_count}</b>`);
+      if (Array.isArray(m.hits) && m.hits.length) {
+        rows.push(`發生日 <b>${m.hits.map((h) => `${h.date}（${h.ratio}%）`).join("、")}</b>`);
+      }
+      if (m.volume_ratio != null) rows.push(`量比 <b>${m.volume_ratio}x</b>`);
+      if (m.volume != null) rows.push(`今日量 <b>${Number(m.volume).toLocaleString()}</b>`);
+      if (m.prev5_avg_volume != null) rows.push(`前5日均量 <b>${Number(m.prev5_avg_volume).toLocaleString()}</b>`);
+      if (m.low3 != null) rows.push(`近3日低 <b>${m.low3}</b> / 近5日低 <b>${m.low5}</b>`);
+      if (m.high3 != null) rows.push(`近3日高 <b>${m.high3}</b> / 近5日高 <b>${m.high5}</b>`);
+      if (!rows.length) return `<span class="muted-dash">—</span>`;
+      return rows.map((x) => `<div>${x}</div>`).join("");
+    }
+
+    /**
+     * 跳脫 HTML。
+     * @param {string} text 原文
+     * @returns {string}
+     */
+    function esc(text) {
+      return String(text)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;");
+    }
+
+    /**
+     * 依頁面捲動比例更新頂部漸層進度條寬度（rAF 節流）。
+     */
+    let scrollRaf = 0;
+    document.addEventListener("scroll", () => {
+      if (scrollRaf) return;
+      scrollRaf = requestAnimationFrame(() => {
+        scrollRaf = 0;
+        const h = document.documentElement.scrollHeight - window.innerHeight;
+        const p = h > 0 ? (window.scrollY / h) * 100 : 100;
+        const bar = document.getElementById("scroll-progress-bar");
+        if (bar) bar.style.width = p + "%";
+      });
+    }, { passive: true });
+
+    loadStrategy();
+  </script>
+</body>
+</html>
