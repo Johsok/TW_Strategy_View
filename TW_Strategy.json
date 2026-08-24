@@ -1,23 +1,2684 @@
 {
   "meta": {
-    "date": "2026-08-23",
-    "time": "13:19:58",
+    "date": "2026-08-24",
+    "time": "13:30:01",
     "timezone": "Asia/Taipei",
     "universe": "tickers.json 台股",
     "scanned": 325,
-    "success": 323,
-    "failed_count": 2,
+    "success": 324,
+    "failed_count": 1,
     "failed": [
-      "8210",
       "2456"
     ],
-    "today_pick_count": 91,
-    "pick_count": 91,
+    "today_pick_count": 87,
+    "pick_count": 178,
     "retention_days": 10,
     "pruned_count": 0,
     "note": "日期與時間為台灣時區；signal_date 為最新日K的台股交易日。僅保留近 10 日（含當日）選股，超過 10 日前的紀錄會刪除。掃描宇宙為 tickers.json 的 stock 族群（去重）。"
   },
   "picks": [
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "5483",
+      "name": "中美晶",
+      "strategy": "S1",
+      "side": "buy",
+      "strategy_desc": "S1(買進：紅K+綠K反轉)：昨日紅K下跌超過3%，今日綠K上漲超過3%，且今高<=昨高*1.05",
+      "signal_date": "2026-08-24",
+      "close": 182.0,
+      "metrics": {
+        "yesterday_change_pct": -5.63,
+        "today_change_pct": 3.41,
+        "yesterday_open": 188.5,
+        "yesterday_close": 176.0,
+        "yesterday_high": 188.5,
+        "today_open": 178.5,
+        "today_close": 182.0,
+        "today_high": 188.5
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "6488",
+      "name": "環球晶",
+      "strategy": "S1",
+      "side": "buy",
+      "strategy_desc": "S1(買進：紅K+綠K反轉)：昨日紅K下跌超過3%，今日綠K上漲超過3%，且今高<=昨高*1.05",
+      "signal_date": "2026-08-24",
+      "close": 1005.0,
+      "metrics": {
+        "yesterday_change_pct": -5.24,
+        "today_change_pct": 6.8,
+        "yesterday_open": 991.0,
+        "yesterday_close": 941.0,
+        "yesterday_high": 1005.0,
+        "today_open": 970.0,
+        "today_close": 1005.0,
+        "today_high": 1035.0
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "2605",
+      "name": "新興",
+      "strategy": "S1",
+      "side": "short",
+      "strategy_desc": "S1(賣空：綠K+紅K反轉)：昨日綠K上漲超過3%，今日紅K下跌超過3%，且今低>=昨低*0.95",
+      "signal_date": "2026-08-24",
+      "close": 36.3,
+      "metrics": {
+        "yesterday_change_pct": 3.85,
+        "today_change_pct": -3.97,
+        "yesterday_open": 36.25,
+        "yesterday_close": 37.8,
+        "yesterday_low": 36.25,
+        "today_open": 38.05,
+        "today_close": 36.3,
+        "today_low": 36.25
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "2637",
+      "name": "慧洋-KY",
+      "strategy": "S1",
+      "side": "short",
+      "strategy_desc": "S1(賣空：綠K+紅K反轉)：昨日綠K上漲超過3%，今日紅K下跌超過3%，且今低>=昨低*0.95",
+      "signal_date": "2026-08-24",
+      "close": 97.0,
+      "metrics": {
+        "yesterday_change_pct": 7.71,
+        "today_change_pct": -4.9,
+        "yesterday_open": 93.5,
+        "yesterday_close": 102.0,
+        "yesterday_low": 93.4,
+        "today_open": 103.0,
+        "today_close": 97.0,
+        "today_low": 96.5
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "3081",
+      "name": "聯亞",
+      "strategy": "S1",
+      "side": "short",
+      "strategy_desc": "S1(賣空：綠K+紅K反轉)：昨日綠K上漲超過3%，今日紅K下跌超過3%，且今低>=昨低*0.95",
+      "signal_date": "2026-08-24",
+      "close": 2805.0,
+      "metrics": {
+        "yesterday_change_pct": 5.04,
+        "today_change_pct": -3.94,
+        "yesterday_open": 2845.0,
+        "yesterday_close": 2920.0,
+        "yesterday_low": 2760.0,
+        "today_open": 2910.0,
+        "today_close": 2805.0,
+        "today_low": 2750.0
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "3163",
+      "name": "波若威",
+      "strategy": "S1",
+      "side": "short",
+      "strategy_desc": "S1(賣空：綠K+紅K反轉)：昨日綠K上漲超過3%，今日紅K下跌超過3%，且今低>=昨低*0.95",
+      "signal_date": "2026-08-24",
+      "close": 740.0,
+      "metrics": {
+        "yesterday_change_pct": 6.39,
+        "today_change_pct": -5.49,
+        "yesterday_open": 734.0,
+        "yesterday_close": 783.0,
+        "yesterday_low": 725.0,
+        "today_open": 783.0,
+        "today_close": 740.0,
+        "today_low": 735.0
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "6278",
+      "name": "台表科",
+      "strategy": "S1",
+      "side": "short",
+      "strategy_desc": "S1(賣空：綠K+紅K反轉)：昨日綠K上漲超過3%，今日紅K下跌超過3%，且今低>=昨低*0.95",
+      "signal_date": "2026-08-24",
+      "close": 179.0,
+      "metrics": {
+        "yesterday_change_pct": 3.89,
+        "today_change_pct": -4.28,
+        "yesterday_open": 180.0,
+        "yesterday_close": 187.0,
+        "yesterday_low": 178.0,
+        "today_open": 183.5,
+        "today_close": 179.0,
+        "today_low": 177.0
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "2301",
+      "name": "光寶科",
+      "strategy": "S2",
+      "side": "buy",
+      "strategy_desc": "S2(買進：2下影線)：近10日內至少2根下影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 287.0,
+      "metrics": {
+        "yesterday_change_pct": -2.25,
+        "today_change_pct": 9.96,
+        "lookback_days": 10,
+        "hit_count": 2,
+        "hits": [
+          {
+            "date": "2026-08-11",
+            "ratio": 52.63,
+            "range_pct": 7.35
+          },
+          {
+            "date": "2026-08-21",
+            "ratio": 54.05,
+            "range_pct": 7.37
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "2455",
+      "name": "全新",
+      "strategy": "S2",
+      "side": "buy",
+      "strategy_desc": "S2(買進：2下影線)：近10日內至少2根下影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 384.0,
+      "metrics": {
+        "yesterday_change_pct": -1.46,
+        "today_change_pct": -5.42,
+        "lookback_days": 10,
+        "hit_count": 2,
+        "hits": [
+          {
+            "date": "2026-08-20",
+            "ratio": 80.85,
+            "range_pct": 5.99
+          },
+          {
+            "date": "2026-08-21",
+            "ratio": 60.0,
+            "range_pct": 4.45
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "2485",
+      "name": "兆赫",
+      "strategy": "S2",
+      "side": "buy",
+      "strategy_desc": "S2(買進：2下影線)：近10日內至少2根下影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 42.25,
+      "metrics": {
+        "yesterday_change_pct": -0.49,
+        "today_change_pct": 3.3,
+        "lookback_days": 10,
+        "hit_count": 2,
+        "hits": [
+          {
+            "date": "2026-08-11",
+            "ratio": 60.0,
+            "range_pct": 3.57
+          },
+          {
+            "date": "2026-08-14",
+            "ratio": 51.28,
+            "range_pct": 4.64
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "3006",
+      "name": "晶豪科",
+      "strategy": "S2",
+      "side": "buy",
+      "strategy_desc": "S2(買進：2下影線)：近10日內至少2根下影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 282.0,
+      "metrics": {
+        "yesterday_change_pct": 2.4,
+        "today_change_pct": 9.94,
+        "lookback_days": 10,
+        "hit_count": 2,
+        "hits": [
+          {
+            "date": "2026-08-17",
+            "ratio": 72.22,
+            "range_pct": 3.38
+          },
+          {
+            "date": "2026-08-20",
+            "ratio": 61.54,
+            "range_pct": 5.36
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "3008",
+      "name": "大立光",
+      "strategy": "S2",
+      "side": "buy",
+      "strategy_desc": "S2(買進：2下影線)：近10日內至少2根下影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 5420.0,
+      "metrics": {
+        "yesterday_change_pct": 1.72,
+        "today_change_pct": -3.39,
+        "lookback_days": 10,
+        "hit_count": 2,
+        "hits": [
+          {
+            "date": "2026-08-11",
+            "ratio": 65.79,
+            "range_pct": 4.49
+          },
+          {
+            "date": "2026-08-21",
+            "ratio": 53.06,
+            "range_pct": 9.32
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "3037",
+      "name": "欣興",
+      "strategy": "S2",
+      "side": "buy",
+      "strategy_desc": "S2(買進：2下影線)：近10日內至少2根下影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 1085.0,
+      "metrics": {
+        "yesterday_change_pct": -4.82,
+        "today_change_pct": 0.0,
+        "lookback_days": 10,
+        "hit_count": 3,
+        "hits": [
+          {
+            "date": "2026-08-14",
+            "ratio": 83.33,
+            "range_pct": 3.02
+          },
+          {
+            "date": "2026-08-20",
+            "ratio": 68.75,
+            "range_pct": 7.37
+          },
+          {
+            "date": "2026-08-21",
+            "ratio": 61.11,
+            "range_pct": 8.74
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "3081",
+      "name": "聯亞",
+      "strategy": "S2",
+      "side": "buy",
+      "strategy_desc": "S2(買進：2下影線)：近10日內至少2根下影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 2805.0,
+      "metrics": {
+        "yesterday_change_pct": 5.04,
+        "today_change_pct": -3.94,
+        "lookback_days": 10,
+        "hit_count": 2,
+        "hits": [
+          {
+            "date": "2026-08-20",
+            "ratio": 66.67,
+            "range_pct": 7.4
+          },
+          {
+            "date": "2026-08-21",
+            "ratio": 53.12,
+            "range_pct": 5.8
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "3189",
+      "name": "景碩",
+      "strategy": "S2",
+      "side": "buy",
+      "strategy_desc": "S2(買進：2下影線)：近10日內至少2根下影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 796.0,
+      "metrics": {
+        "yesterday_change_pct": -4.7,
+        "today_change_pct": -1.85,
+        "lookback_days": 10,
+        "hit_count": 3,
+        "hits": [
+          {
+            "date": "2026-08-12",
+            "ratio": 54.05,
+            "range_pct": 4.47
+          },
+          {
+            "date": "2026-08-13",
+            "ratio": 64.41,
+            "range_pct": 7.26
+          },
+          {
+            "date": "2026-08-20",
+            "ratio": 53.23,
+            "range_pct": 7.58
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "3234",
+      "name": "光環",
+      "strategy": "S2",
+      "side": "buy",
+      "strategy_desc": "S2(買進：2下影線)：近10日內至少2根下影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 166.0,
+      "metrics": {
+        "yesterday_change_pct": 0.0,
+        "today_change_pct": 9.93,
+        "lookback_days": 10,
+        "hit_count": 3,
+        "hits": [
+          {
+            "date": "2026-08-11",
+            "ratio": 57.14,
+            "range_pct": 9.21
+          },
+          {
+            "date": "2026-08-20",
+            "ratio": 81.82,
+            "range_pct": 7.75
+          },
+          {
+            "date": "2026-08-21",
+            "ratio": 77.27,
+            "range_pct": 7.77
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "3450",
+      "name": "聯鈞",
+      "strategy": "S2",
+      "side": "buy",
+      "strategy_desc": "S2(買進：2下影線)：近10日內至少2根下影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 509.0,
+      "metrics": {
+        "yesterday_change_pct": -0.36,
+        "today_change_pct": -7.62,
+        "lookback_days": 10,
+        "hit_count": 2,
+        "hits": [
+          {
+            "date": "2026-08-13",
+            "ratio": 58.62,
+            "range_pct": 8.71
+          },
+          {
+            "date": "2026-08-14",
+            "ratio": 76.0,
+            "range_pct": 5.09
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "3532",
+      "name": "台勝科",
+      "strategy": "S2",
+      "side": "buy",
+      "strategy_desc": "S2(買進：2下影線)：近10日內至少2根下影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 376.5,
+      "metrics": {
+        "yesterday_change_pct": 0.74,
+        "today_change_pct": 9.93,
+        "lookback_days": 10,
+        "hit_count": 2,
+        "hits": [
+          {
+            "date": "2026-08-11",
+            "ratio": 68.0,
+            "range_pct": 9.42
+          },
+          {
+            "date": "2026-08-13",
+            "ratio": 62.22,
+            "range_pct": 7.02
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "3665",
+      "name": "貿聯-KY",
+      "strategy": "S2",
+      "side": "buy",
+      "strategy_desc": "S2(買進：2下影線)：近10日內至少2根下影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 2050.0,
+      "metrics": {
+        "yesterday_change_pct": 1.11,
+        "today_change_pct": -9.89,
+        "lookback_days": 10,
+        "hit_count": 2,
+        "hits": [
+          {
+            "date": "2026-08-11",
+            "ratio": 55.56,
+            "range_pct": 6.52
+          },
+          {
+            "date": "2026-08-20",
+            "ratio": 60.0,
+            "range_pct": 3.44
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "3673",
+      "name": "TPK-KY",
+      "strategy": "S2",
+      "side": "buy",
+      "strategy_desc": "S2(買進：2下影線)：近10日內至少2根下影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 63.3,
+      "metrics": {
+        "yesterday_change_pct": -2.76,
+        "today_change_pct": 0.0,
+        "lookback_days": 10,
+        "hit_count": 2,
+        "hits": [
+          {
+            "date": "2026-08-20",
+            "ratio": 51.61,
+            "range_pct": 4.98
+          },
+          {
+            "date": "2026-08-21",
+            "ratio": 57.14,
+            "range_pct": 3.38
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "3711",
+      "name": "日月光投控",
+      "strategy": "S2",
+      "side": "buy",
+      "strategy_desc": "S2(買進：2下影線)：近10日內至少2根下影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 593.0,
+      "metrics": {
+        "yesterday_change_pct": -0.51,
+        "today_change_pct": 1.02,
+        "lookback_days": 10,
+        "hit_count": 2,
+        "hits": [
+          {
+            "date": "2026-08-11",
+            "ratio": 86.36,
+            "range_pct": 3.61
+          },
+          {
+            "date": "2026-08-20",
+            "ratio": 52.17,
+            "range_pct": 4.05
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "4931",
+      "name": "新盛力",
+      "strategy": "S2",
+      "side": "buy",
+      "strategy_desc": "S2(買進：2下影線)：近10日內至少2根下影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 252.0,
+      "metrics": {
+        "yesterday_change_pct": 2.56,
+        "today_change_pct": -10.0,
+        "lookback_days": 10,
+        "hit_count": 3,
+        "hits": [
+          {
+            "date": "2026-08-14",
+            "ratio": 76.47,
+            "range_pct": 3.31
+          },
+          {
+            "date": "2026-08-20",
+            "ratio": 87.5,
+            "range_pct": 6.18
+          },
+          {
+            "date": "2026-08-21",
+            "ratio": 79.31,
+            "range_pct": 5.46
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "4938",
+      "name": "和碩",
+      "strategy": "S2",
+      "side": "buy",
+      "strategy_desc": "S2(買進：2下影線)：近10日內至少2根下影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 89.3,
+      "metrics": {
+        "yesterday_change_pct": -1.23,
+        "today_change_pct": 0.79,
+        "lookback_days": 10,
+        "hit_count": 2,
+        "hits": [
+          {
+            "date": "2026-08-11",
+            "ratio": 65.12,
+            "range_pct": 5.08
+          },
+          {
+            "date": "2026-08-18",
+            "ratio": 69.44,
+            "range_pct": 4.12
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "5347",
+      "name": "世界",
+      "strategy": "S2",
+      "side": "buy",
+      "strategy_desc": "S2(買進：2下影線)：近10日內至少2根下影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 152.5,
+      "metrics": {
+        "yesterday_change_pct": -1.3,
+        "today_change_pct": 0.66,
+        "lookback_days": 10,
+        "hit_count": 2,
+        "hits": [
+          {
+            "date": "2026-08-11",
+            "ratio": 76.92,
+            "range_pct": 4.25
+          },
+          {
+            "date": "2026-08-20",
+            "ratio": 72.73,
+            "range_pct": 3.69
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "6213",
+      "name": "聯茂",
+      "strategy": "S2",
+      "side": "buy",
+      "strategy_desc": "S2(買進：2下影線)：近10日內至少2根下影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 482.0,
+      "metrics": {
+        "yesterday_change_pct": 0.59,
+        "today_change_pct": -6.04,
+        "lookback_days": 10,
+        "hit_count": 3,
+        "hits": [
+          {
+            "date": "2026-08-11",
+            "ratio": 56.64,
+            "range_pct": 14.29
+          },
+          {
+            "date": "2026-08-13",
+            "ratio": 95.45,
+            "range_pct": 4.91
+          },
+          {
+            "date": "2026-08-20",
+            "ratio": 90.0,
+            "range_pct": 4.08
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "6274",
+      "name": "台燿",
+      "strategy": "S2",
+      "side": "buy",
+      "strategy_desc": "S2(買進：2下影線)：近10日內至少2根下影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 1465.0,
+      "metrics": {
+        "yesterday_change_pct": -5.08,
+        "today_change_pct": -2.01,
+        "lookback_days": 10,
+        "hit_count": 2,
+        "hits": [
+          {
+            "date": "2026-08-11",
+            "ratio": 80.95,
+            "range_pct": 7.0
+          },
+          {
+            "date": "2026-08-20",
+            "ratio": 64.29,
+            "range_pct": 4.64
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "8021",
+      "name": "尖點",
+      "strategy": "S2",
+      "side": "buy",
+      "strategy_desc": "S2(買進：2下影線)：近10日內至少2根下影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 391.0,
+      "metrics": {
+        "yesterday_change_pct": -2.82,
+        "today_change_pct": -1.51,
+        "lookback_days": 10,
+        "hit_count": 2,
+        "hits": [
+          {
+            "date": "2026-08-14",
+            "ratio": 72.73,
+            "range_pct": 5.3
+          },
+          {
+            "date": "2026-08-17",
+            "ratio": 79.17,
+            "range_pct": 9.11
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "1504",
+      "name": "東元",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 71.5,
+      "metrics": {
+        "yesterday_change_pct": -1.37,
+        "today_change_pct": -0.83,
+        "lookback_days": 10,
+        "hit_count": 2,
+        "hits": [
+          {
+            "date": "2026-08-14",
+            "ratio": 90.91,
+            "range_pct": 4.68
+          },
+          {
+            "date": "2026-08-24",
+            "ratio": 75.0,
+            "range_pct": 5.59
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "2049",
+      "name": "上銀",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 344.0,
+      "metrics": {
+        "yesterday_change_pct": -4.77,
+        "today_change_pct": -1.43,
+        "lookback_days": 10,
+        "hit_count": 4,
+        "hits": [
+          {
+            "date": "2026-08-13",
+            "ratio": 79.63,
+            "range_pct": 7.15
+          },
+          {
+            "date": "2026-08-17",
+            "ratio": 54.0,
+            "range_pct": 6.76
+          },
+          {
+            "date": "2026-08-20",
+            "ratio": 57.14,
+            "range_pct": 7.69
+          },
+          {
+            "date": "2026-08-24",
+            "ratio": 61.76,
+            "range_pct": 4.95
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "2303",
+      "name": "聯電",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 124.5,
+      "metrics": {
+        "yesterday_change_pct": 0.87,
+        "today_change_pct": 6.87,
+        "lookback_days": 10,
+        "hit_count": 2,
+        "hits": [
+          {
+            "date": "2026-08-12",
+            "ratio": 55.56,
+            "range_pct": 3.72
+          },
+          {
+            "date": "2026-08-13",
+            "ratio": 66.67,
+            "range_pct": 6.1
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "2308",
+      "name": "台達電",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 1735.0,
+      "metrics": {
+        "yesterday_change_pct": 0.29,
+        "today_change_pct": -0.86,
+        "lookback_days": 10,
+        "hit_count": 2,
+        "hits": [
+          {
+            "date": "2026-08-19",
+            "ratio": 58.33,
+            "range_pct": 3.45
+          },
+          {
+            "date": "2026-08-24",
+            "ratio": 61.54,
+            "range_pct": 3.8
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "2312",
+      "name": "金寶",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 31.85,
+      "metrics": {
+        "yesterday_change_pct": -0.96,
+        "today_change_pct": 2.58,
+        "lookback_days": 10,
+        "hit_count": 2,
+        "hits": [
+          {
+            "date": "2026-08-11",
+            "ratio": 77.5,
+            "range_pct": 6.15
+          },
+          {
+            "date": "2026-08-24",
+            "ratio": 66.67,
+            "range_pct": 4.3
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "2313",
+      "name": "華通",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 213.5,
+      "metrics": {
+        "yesterday_change_pct": -1.84,
+        "today_change_pct": 0.0,
+        "lookback_days": 10,
+        "hit_count": 5,
+        "hits": [
+          {
+            "date": "2026-08-13",
+            "ratio": 75.0,
+            "range_pct": 6.64
+          },
+          {
+            "date": "2026-08-14",
+            "ratio": 72.22,
+            "range_pct": 4.22
+          },
+          {
+            "date": "2026-08-20",
+            "ratio": 52.94,
+            "range_pct": 3.98
+          },
+          {
+            "date": "2026-08-21",
+            "ratio": 54.55,
+            "range_pct": 5.21
+          },
+          {
+            "date": "2026-08-24",
+            "ratio": 86.67,
+            "range_pct": 3.52
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "2327",
+      "name": "國巨",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 556.0,
+      "metrics": {
+        "yesterday_change_pct": -1.42,
+        "today_change_pct": 0.36,
+        "lookback_days": 10,
+        "hit_count": 2,
+        "hits": [
+          {
+            "date": "2026-08-12",
+            "ratio": 72.0,
+            "range_pct": 4.17
+          },
+          {
+            "date": "2026-08-24",
+            "ratio": 92.0,
+            "range_pct": 4.5
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "2340",
+      "name": "台亞",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 32.2,
+      "metrics": {
+        "yesterday_change_pct": 0.16,
+        "today_change_pct": 3.21,
+        "lookback_days": 10,
+        "hit_count": 2,
+        "hits": [
+          {
+            "date": "2026-08-19",
+            "ratio": 55.17,
+            "range_pct": 4.96
+          },
+          {
+            "date": "2026-08-24",
+            "ratio": 56.14,
+            "range_pct": 9.21
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "2344",
+      "name": "華邦電",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 177.5,
+      "metrics": {
+        "yesterday_change_pct": 2.55,
+        "today_change_pct": -1.93,
+        "lookback_days": 10,
+        "hit_count": 3,
+        "hits": [
+          {
+            "date": "2026-08-14",
+            "ratio": 71.43,
+            "range_pct": 5.82
+          },
+          {
+            "date": "2026-08-17",
+            "ratio": 52.94,
+            "range_pct": 4.68
+          },
+          {
+            "date": "2026-08-24",
+            "ratio": 55.56,
+            "range_pct": 5.13
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "2356",
+      "name": "英業達",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 66.1,
+      "metrics": {
+        "yesterday_change_pct": 1.86,
+        "today_change_pct": 0.61,
+        "lookback_days": 10,
+        "hit_count": 2,
+        "hits": [
+          {
+            "date": "2026-08-13",
+            "ratio": 70.45,
+            "range_pct": 6.45
+          },
+          {
+            "date": "2026-08-14",
+            "ratio": 60.98,
+            "range_pct": 5.91
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "2368",
+      "name": "金像電",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 951.0,
+      "metrics": {
+        "yesterday_change_pct": -5.85,
+        "today_change_pct": -1.45,
+        "lookback_days": 10,
+        "hit_count": 3,
+        "hits": [
+          {
+            "date": "2026-08-14",
+            "ratio": 71.43,
+            "range_pct": 7.04
+          },
+          {
+            "date": "2026-08-19",
+            "ratio": 73.33,
+            "range_pct": 7.35
+          },
+          {
+            "date": "2026-08-24",
+            "ratio": 75.51,
+            "range_pct": 5.15
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "2392",
+      "name": "正崴",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 44.35,
+      "metrics": {
+        "yesterday_change_pct": 2.46,
+        "today_change_pct": 6.61,
+        "lookback_days": 10,
+        "hit_count": 3,
+        "hits": [
+          {
+            "date": "2026-08-12",
+            "ratio": 92.0,
+            "range_pct": 3.15
+          },
+          {
+            "date": "2026-08-17",
+            "ratio": 58.0,
+            "range_pct": 5.92
+          },
+          {
+            "date": "2026-08-20",
+            "ratio": 69.23,
+            "range_pct": 3.23
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "2441",
+      "name": "超豐",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 114.5,
+      "metrics": {
+        "yesterday_change_pct": -1.32,
+        "today_change_pct": 1.78,
+        "lookback_days": 10,
+        "hit_count": 2,
+        "hits": [
+          {
+            "date": "2026-08-12",
+            "ratio": 90.91,
+            "range_pct": 4.4
+          },
+          {
+            "date": "2026-08-13",
+            "ratio": 62.5,
+            "range_pct": 3.19
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "2478",
+      "name": "大毅",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 121.0,
+      "metrics": {
+        "yesterday_change_pct": -3.89,
+        "today_change_pct": -2.02,
+        "lookback_days": 10,
+        "hit_count": 3,
+        "hits": [
+          {
+            "date": "2026-08-11",
+            "ratio": 86.96,
+            "range_pct": 9.62
+          },
+          {
+            "date": "2026-08-13",
+            "ratio": 86.96,
+            "range_pct": 8.88
+          },
+          {
+            "date": "2026-08-18",
+            "ratio": 80.0,
+            "range_pct": 6.15
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "2485",
+      "name": "兆赫",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 42.25,
+      "metrics": {
+        "yesterday_change_pct": -0.49,
+        "today_change_pct": 3.3,
+        "lookback_days": 10,
+        "hit_count": 2,
+        "hits": [
+          {
+            "date": "2026-08-20",
+            "ratio": 53.85,
+            "range_pct": 3.21
+          },
+          {
+            "date": "2026-08-24",
+            "ratio": 65.33,
+            "range_pct": 9.16
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "2492",
+      "name": "華新科",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 266.5,
+      "metrics": {
+        "yesterday_change_pct": -2.39,
+        "today_change_pct": 0.19,
+        "lookback_days": 10,
+        "hit_count": 2,
+        "hits": [
+          {
+            "date": "2026-08-12",
+            "ratio": 58.33,
+            "range_pct": 8.33
+          },
+          {
+            "date": "2026-08-24",
+            "ratio": 86.36,
+            "range_pct": 4.15
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "3008",
+      "name": "大立光",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 5420.0,
+      "metrics": {
+        "yesterday_change_pct": 1.72,
+        "today_change_pct": -3.39,
+        "lookback_days": 10,
+        "hit_count": 2,
+        "hits": [
+          {
+            "date": "2026-08-13",
+            "ratio": 58.93,
+            "range_pct": 6.16
+          },
+          {
+            "date": "2026-08-14",
+            "ratio": 66.67,
+            "range_pct": 7.19
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "3016",
+      "name": "嘉晶",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 100.0,
+      "metrics": {
+        "yesterday_change_pct": -4.47,
+        "today_change_pct": 1.63,
+        "lookback_days": 10,
+        "hit_count": 4,
+        "hits": [
+          {
+            "date": "2026-08-12",
+            "ratio": 76.92,
+            "range_pct": 6.34
+          },
+          {
+            "date": "2026-08-13",
+            "ratio": 66.67,
+            "range_pct": 7.25
+          },
+          {
+            "date": "2026-08-19",
+            "ratio": 60.0,
+            "range_pct": 5.0
+          },
+          {
+            "date": "2026-08-24",
+            "ratio": 100.0,
+            "range_pct": 6.0
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "3042",
+      "name": "晶技",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 178.5,
+      "metrics": {
+        "yesterday_change_pct": 0.8,
+        "today_change_pct": -6.05,
+        "lookback_days": 10,
+        "hit_count": 3,
+        "hits": [
+          {
+            "date": "2026-08-11",
+            "ratio": 80.0,
+            "range_pct": 5.65
+          },
+          {
+            "date": "2026-08-13",
+            "ratio": 68.97,
+            "range_pct": 7.97
+          },
+          {
+            "date": "2026-08-21",
+            "ratio": 82.76,
+            "range_pct": 7.73
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "3044",
+      "name": "健鼎",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 448.5,
+      "metrics": {
+        "yesterday_change_pct": -5.46,
+        "today_change_pct": -2.29,
+        "lookback_days": 10,
+        "hit_count": 3,
+        "hits": [
+          {
+            "date": "2026-08-13",
+            "ratio": 57.14,
+            "range_pct": 7.93
+          },
+          {
+            "date": "2026-08-14",
+            "ratio": 68.42,
+            "range_pct": 3.91
+          },
+          {
+            "date": "2026-08-19",
+            "ratio": 62.12,
+            "range_pct": 7.05
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "3090",
+      "name": "日電貿",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 164.0,
+      "metrics": {
+        "yesterday_change_pct": -4.07,
+        "today_change_pct": -0.61,
+        "lookback_days": 10,
+        "hit_count": 2,
+        "hits": [
+          {
+            "date": "2026-08-13",
+            "ratio": 88.89,
+            "range_pct": 7.78
+          },
+          {
+            "date": "2026-08-24",
+            "ratio": 90.0,
+            "range_pct": 3.05
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "3189",
+      "name": "景碩",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 796.0,
+      "metrics": {
+        "yesterday_change_pct": -4.7,
+        "today_change_pct": -1.85,
+        "lookback_days": 10,
+        "hit_count": 3,
+        "hits": [
+          {
+            "date": "2026-08-17",
+            "ratio": 52.94,
+            "range_pct": 5.79
+          },
+          {
+            "date": "2026-08-19",
+            "ratio": 75.71,
+            "range_pct": 8.41
+          },
+          {
+            "date": "2026-08-24",
+            "ratio": 56.0,
+            "range_pct": 6.31
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "3324",
+      "name": "雙鴻",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 1015.0,
+      "metrics": {
+        "yesterday_change_pct": -2.42,
+        "today_change_pct": 4.75,
+        "lookback_days": 10,
+        "hit_count": 2,
+        "hits": [
+          {
+            "date": "2026-08-12",
+            "ratio": 57.14,
+            "range_pct": 3.38
+          },
+          {
+            "date": "2026-08-17",
+            "ratio": 57.14,
+            "range_pct": 3.5
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "3374",
+      "name": "精材",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 304.5,
+      "metrics": {
+        "yesterday_change_pct": 0.99,
+        "today_change_pct": -0.65,
+        "lookback_days": 10,
+        "hit_count": 4,
+        "hits": [
+          {
+            "date": "2026-08-14",
+            "ratio": 66.67,
+            "range_pct": 8.96
+          },
+          {
+            "date": "2026-08-19",
+            "ratio": 60.0,
+            "range_pct": 4.25
+          },
+          {
+            "date": "2026-08-21",
+            "ratio": 54.29,
+            "range_pct": 5.86
+          },
+          {
+            "date": "2026-08-24",
+            "ratio": 59.26,
+            "range_pct": 4.52
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "3406",
+      "name": "玉晶光",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 662.0,
+      "metrics": {
+        "yesterday_change_pct": 0.31,
+        "today_change_pct": 1.53,
+        "lookback_days": 10,
+        "hit_count": 3,
+        "hits": [
+          {
+            "date": "2026-08-14",
+            "ratio": 55.88,
+            "range_pct": 5.59
+          },
+          {
+            "date": "2026-08-19",
+            "ratio": 88.89,
+            "range_pct": 8.29
+          },
+          {
+            "date": "2026-08-24",
+            "ratio": 75.51,
+            "range_pct": 7.45
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "3450",
+      "name": "聯鈞",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 509.0,
+      "metrics": {
+        "yesterday_change_pct": -0.36,
+        "today_change_pct": -7.62,
+        "lookback_days": 10,
+        "hit_count": 2,
+        "hits": [
+          {
+            "date": "2026-08-18",
+            "ratio": 51.22,
+            "range_pct": 7.33
+          },
+          {
+            "date": "2026-08-21",
+            "ratio": 54.05,
+            "range_pct": 6.84
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "3481",
+      "name": "群創",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 45.8,
+      "metrics": {
+        "yesterday_change_pct": 0.11,
+        "today_change_pct": -0.54,
+        "lookback_days": 10,
+        "hit_count": 2,
+        "hits": [
+          {
+            "date": "2026-08-12",
+            "ratio": 61.11,
+            "range_pct": 3.58
+          },
+          {
+            "date": "2026-08-14",
+            "ratio": 72.22,
+            "range_pct": 3.62
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "3532",
+      "name": "台勝科",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 376.5,
+      "metrics": {
+        "yesterday_change_pct": 0.74,
+        "today_change_pct": 9.93,
+        "lookback_days": 10,
+        "hit_count": 2,
+        "hits": [
+          {
+            "date": "2026-08-18",
+            "ratio": 78.82,
+            "range_pct": 11.81
+          },
+          {
+            "date": "2026-08-19",
+            "ratio": 52.0,
+            "range_pct": 7.26
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "3665",
+      "name": "貿聯-KY",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 2050.0,
+      "metrics": {
+        "yesterday_change_pct": 1.11,
+        "today_change_pct": -9.89,
+        "lookback_days": 10,
+        "hit_count": 2,
+        "hits": [
+          {
+            "date": "2026-08-13",
+            "ratio": 63.64,
+            "range_pct": 5.08
+          },
+          {
+            "date": "2026-08-21",
+            "ratio": 62.96,
+            "range_pct": 6.07
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "3714",
+      "name": "富采",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 57.8,
+      "metrics": {
+        "yesterday_change_pct": 0.53,
+        "today_change_pct": 0.87,
+        "lookback_days": 10,
+        "hit_count": 3,
+        "hits": [
+          {
+            "date": "2026-08-19",
+            "ratio": 71.43,
+            "range_pct": 3.85
+          },
+          {
+            "date": "2026-08-21",
+            "ratio": 76.0,
+            "range_pct": 4.41
+          },
+          {
+            "date": "2026-08-24",
+            "ratio": 92.86,
+            "range_pct": 4.86
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "4919",
+      "name": "新唐",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 116.5,
+      "metrics": {
+        "yesterday_change_pct": -3.8,
+        "today_change_pct": 2.19,
+        "lookback_days": 10,
+        "hit_count": 3,
+        "hits": [
+          {
+            "date": "2026-08-13",
+            "ratio": 72.73,
+            "range_pct": 4.37
+          },
+          {
+            "date": "2026-08-19",
+            "ratio": 60.0,
+            "range_pct": 4.37
+          },
+          {
+            "date": "2026-08-24",
+            "ratio": 69.23,
+            "range_pct": 5.68
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "4938",
+      "name": "和碩",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 89.3,
+      "metrics": {
+        "yesterday_change_pct": -1.23,
+        "today_change_pct": 0.79,
+        "lookback_days": 10,
+        "hit_count": 2,
+        "hits": [
+          {
+            "date": "2026-08-13",
+            "ratio": 81.43,
+            "range_pct": 7.49
+          },
+          {
+            "date": "2026-08-14",
+            "ratio": 51.52,
+            "range_pct": 3.52
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "4958",
+      "name": "臻鼎-KY",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 439.0,
+      "metrics": {
+        "yesterday_change_pct": -4.75,
+        "today_change_pct": -0.45,
+        "lookback_days": 10,
+        "hit_count": 3,
+        "hits": [
+          {
+            "date": "2026-08-13",
+            "ratio": 67.65,
+            "range_pct": 7.2
+          },
+          {
+            "date": "2026-08-14",
+            "ratio": 66.33,
+            "range_pct": 10.36
+          },
+          {
+            "date": "2026-08-19",
+            "ratio": 76.47,
+            "range_pct": 5.65
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "4979",
+      "name": "華星光",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 558.0,
+      "metrics": {
+        "yesterday_change_pct": 1.23,
+        "today_change_pct": -3.29,
+        "lookback_days": 10,
+        "hit_count": 3,
+        "hits": [
+          {
+            "date": "2026-08-11",
+            "ratio": 73.08,
+            "range_pct": 10.28
+          },
+          {
+            "date": "2026-08-13",
+            "ratio": 65.45,
+            "range_pct": 9.82
+          },
+          {
+            "date": "2026-08-21",
+            "ratio": 52.83,
+            "range_pct": 9.6
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "5371",
+      "name": "中光電",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-21",
+      "close": 83.5,
+      "metrics": {
+        "yesterday_change_pct": 0.0,
+        "today_change_pct": -0.95,
+        "lookback_days": 10,
+        "hit_count": 2,
+        "hits": [
+          {
+            "date": "2026-08-18",
+            "ratio": 57.14,
+            "range_pct": 5.68
+          },
+          {
+            "date": "2026-08-20",
+            "ratio": 71.88,
+            "range_pct": 3.8
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "5483",
+      "name": "中美晶",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 182.0,
+      "metrics": {
+        "yesterday_change_pct": -5.63,
+        "today_change_pct": 3.41,
+        "lookback_days": 10,
+        "hit_count": 5,
+        "hits": [
+          {
+            "date": "2026-08-11",
+            "ratio": 56.25,
+            "range_pct": 4.85
+          },
+          {
+            "date": "2026-08-13",
+            "ratio": 88.24,
+            "range_pct": 9.14
+          },
+          {
+            "date": "2026-08-17",
+            "ratio": 68.42,
+            "range_pct": 5.18
+          },
+          {
+            "date": "2026-08-18",
+            "ratio": 86.36,
+            "range_pct": 5.98
+          },
+          {
+            "date": "2026-08-24",
+            "ratio": 65.0,
+            "range_pct": 5.6
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "6173",
+      "name": "信昌電",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 205.0,
+      "metrics": {
+        "yesterday_change_pct": -4.07,
+        "today_change_pct": -3.3,
+        "lookback_days": 10,
+        "hit_count": 2,
+        "hits": [
+          {
+            "date": "2026-08-17",
+            "ratio": 66.67,
+            "range_pct": 14.14
+          },
+          {
+            "date": "2026-08-24",
+            "ratio": 55.0,
+            "range_pct": 4.88
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "6182",
+      "name": "合晶",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 110.5,
+      "metrics": {
+        "yesterday_change_pct": -3.2,
+        "today_change_pct": 4.25,
+        "lookback_days": 10,
+        "hit_count": 2,
+        "hits": [
+          {
+            "date": "2026-08-18",
+            "ratio": 75.0,
+            "range_pct": 10.08
+          },
+          {
+            "date": "2026-08-24",
+            "ratio": 75.0,
+            "range_pct": 7.37
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "6239",
+      "name": "力成",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 269.5,
+      "metrics": {
+        "yesterday_change_pct": -0.37,
+        "today_change_pct": 0.75,
+        "lookback_days": 10,
+        "hit_count": 2,
+        "hits": [
+          {
+            "date": "2026-08-13",
+            "ratio": 58.33,
+            "range_pct": 4.26
+          },
+          {
+            "date": "2026-08-24",
+            "ratio": 65.22,
+            "range_pct": 4.33
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "6274",
+      "name": "台燿",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 1465.0,
+      "metrics": {
+        "yesterday_change_pct": -5.08,
+        "today_change_pct": -2.01,
+        "lookback_days": 10,
+        "hit_count": 2,
+        "hits": [
+          {
+            "date": "2026-08-12",
+            "ratio": 69.23,
+            "range_pct": 4.11
+          },
+          {
+            "date": "2026-08-19",
+            "ratio": 62.5,
+            "range_pct": 8.25
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "6278",
+      "name": "台表科",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 179.0,
+      "metrics": {
+        "yesterday_change_pct": 3.89,
+        "today_change_pct": -4.28,
+        "lookback_days": 10,
+        "hit_count": 3,
+        "hits": [
+          {
+            "date": "2026-08-14",
+            "ratio": 89.47,
+            "range_pct": 5.52
+          },
+          {
+            "date": "2026-08-17",
+            "ratio": 61.54,
+            "range_pct": 3.77
+          },
+          {
+            "date": "2026-08-19",
+            "ratio": 51.85,
+            "range_pct": 8.04
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "6488",
+      "name": "環球晶",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 1005.0,
+      "metrics": {
+        "yesterday_change_pct": -5.24,
+        "today_change_pct": 6.8,
+        "lookback_days": 10,
+        "hit_count": 3,
+        "hits": [
+          {
+            "date": "2026-08-11",
+            "ratio": 56.67,
+            "range_pct": 7.29
+          },
+          {
+            "date": "2026-08-17",
+            "ratio": 71.43,
+            "range_pct": 10.61
+          },
+          {
+            "date": "2026-08-18",
+            "ratio": 54.55,
+            "range_pct": 10.89
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "6531",
+      "name": "愛普",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 846.0,
+      "metrics": {
+        "yesterday_change_pct": 0.11,
+        "today_change_pct": -4.19,
+        "lookback_days": 10,
+        "hit_count": 3,
+        "hits": [
+          {
+            "date": "2026-08-13",
+            "ratio": 53.49,
+            "range_pct": 5.0
+          },
+          {
+            "date": "2026-08-19",
+            "ratio": 80.49,
+            "range_pct": 4.95
+          },
+          {
+            "date": "2026-08-21",
+            "ratio": 72.22,
+            "range_pct": 6.21
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "6672",
+      "name": "騰輝",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 258.5,
+      "metrics": {
+        "yesterday_change_pct": -6.96,
+        "today_change_pct": -3.36,
+        "lookback_days": 10,
+        "hit_count": 2,
+        "hits": [
+          {
+            "date": "2026-08-14",
+            "ratio": 55.77,
+            "range_pct": 10.06
+          },
+          {
+            "date": "2026-08-19",
+            "ratio": 69.23,
+            "range_pct": 4.64
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "6770",
+      "name": "力積電",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 70.8,
+      "metrics": {
+        "yesterday_change_pct": 1.63,
+        "today_change_pct": 3.51,
+        "lookback_days": 10,
+        "hit_count": 3,
+        "hits": [
+          {
+            "date": "2026-08-13",
+            "ratio": 51.06,
+            "range_pct": 6.46
+          },
+          {
+            "date": "2026-08-14",
+            "ratio": 61.82,
+            "range_pct": 7.21
+          },
+          {
+            "date": "2026-08-19",
+            "ratio": 74.19,
+            "range_pct": 4.66
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "8021",
+      "name": "尖點",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 391.0,
+      "metrics": {
+        "yesterday_change_pct": -2.82,
+        "today_change_pct": -1.51,
+        "lookback_days": 10,
+        "hit_count": 3,
+        "hits": [
+          {
+            "date": "2026-08-19",
+            "ratio": 88.64,
+            "range_pct": 5.63
+          },
+          {
+            "date": "2026-08-20",
+            "ratio": 57.14,
+            "range_pct": 4.36
+          },
+          {
+            "date": "2026-08-24",
+            "ratio": 60.87,
+            "range_pct": 5.93
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "8039",
+      "name": "台虹",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 268.0,
+      "metrics": {
+        "yesterday_change_pct": -0.35,
+        "today_change_pct": -4.96,
+        "lookback_days": 10,
+        "hit_count": 2,
+        "hits": [
+          {
+            "date": "2026-08-19",
+            "ratio": 69.44,
+            "range_pct": 6.77
+          },
+          {
+            "date": "2026-08-21",
+            "ratio": 53.33,
+            "range_pct": 17.24
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "8046",
+      "name": "南電",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 1140.0,
+      "metrics": {
+        "yesterday_change_pct": -5.02,
+        "today_change_pct": 0.44,
+        "lookback_days": 10,
+        "hit_count": 2,
+        "hits": [
+          {
+            "date": "2026-08-17",
+            "ratio": 82.35,
+            "range_pct": 6.56
+          },
+          {
+            "date": "2026-08-19",
+            "ratio": 76.92,
+            "range_pct": 11.3
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "8086",
+      "name": "宏捷科",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 112.5,
+      "metrics": {
+        "yesterday_change_pct": -3.49,
+        "today_change_pct": 1.81,
+        "lookback_days": 10,
+        "hit_count": 2,
+        "hits": [
+          {
+            "date": "2026-08-12",
+            "ratio": 54.55,
+            "range_pct": 4.72
+          },
+          {
+            "date": "2026-08-24",
+            "ratio": 55.56,
+            "range_pct": 4.07
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "8103",
+      "name": "瀚荃",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 98.2,
+      "metrics": {
+        "yesterday_change_pct": 2.29,
+        "today_change_pct": 4.47,
+        "lookback_days": 10,
+        "hit_count": 3,
+        "hits": [
+          {
+            "date": "2026-08-12",
+            "ratio": 87.1,
+            "range_pct": 3.84
+          },
+          {
+            "date": "2026-08-17",
+            "ratio": 72.5,
+            "range_pct": 5.07
+          },
+          {
+            "date": "2026-08-18",
+            "ratio": 57.5,
+            "range_pct": 10.0
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "8110",
+      "name": "華東",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 45.7,
+      "metrics": {
+        "yesterday_change_pct": 1.92,
+        "today_change_pct": 1.11,
+        "lookback_days": 10,
+        "hit_count": 3,
+        "hits": [
+          {
+            "date": "2026-08-14",
+            "ratio": 89.19,
+            "range_pct": 3.96
+          },
+          {
+            "date": "2026-08-20",
+            "ratio": 51.52,
+            "range_pct": 3.78
+          },
+          {
+            "date": "2026-08-24",
+            "ratio": 71.43,
+            "range_pct": 3.87
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "8299",
+      "name": "群聯",
+      "strategy": "S2",
+      "side": "short",
+      "strategy_desc": "S2(賣空：2上影線)：近10日內至少2根上影線佔比超過50%，且該根K振幅(最高-最低)/最低>=3%",
+      "signal_date": "2026-08-24",
+      "close": 2140.0,
+      "metrics": {
+        "yesterday_change_pct": 4.01,
+        "today_change_pct": 3.13,
+        "lookback_days": 10,
+        "hit_count": 2,
+        "hits": [
+          {
+            "date": "2026-08-20",
+            "ratio": 60.87,
+            "range_pct": 5.85
+          },
+          {
+            "date": "2026-08-24",
+            "ratio": 51.72,
+            "range_pct": 7.0
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "2303",
+      "name": "聯電",
+      "strategy": "S3",
+      "side": "buy",
+      "strategy_desc": "S3(買進：爆量+向上反轉)：近3日最低點為近5日最低點，今日量大於前5日均量2倍，且上漲超過3%",
+      "signal_date": "2026-08-24",
+      "close": 124.5,
+      "metrics": {
+        "yesterday_change_pct": 0.87,
+        "today_change_pct": 6.87,
+        "volume": 180298791,
+        "prev5_avg_volume": 84449490,
+        "volume_ratio": 2.13,
+        "low3": 112.0,
+        "low5": 112.0
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "2637",
+      "name": "慧洋-KY",
+      "strategy": "S3",
+      "side": "short",
+      "strategy_desc": "S3(賣空：爆量+向下反轉)：近3日最高點為近5日最高點，今日量大於前5日均量2倍，且下跌超過3%",
+      "signal_date": "2026-08-24",
+      "close": 97.0,
+      "metrics": {
+        "yesterday_change_pct": 7.71,
+        "today_change_pct": -4.9,
+        "volume": 20383597,
+        "prev5_avg_volume": 8501690,
+        "volume_ratio": 2.4,
+        "high3": 108.0,
+        "high5": 108.0
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "3163",
+      "name": "波若威",
+      "strategy": "S3",
+      "side": "short",
+      "strategy_desc": "S3(賣空：爆量+向下反轉)：近3日最高點為近5日最高點，今日量大於前5日均量2倍，且下跌超過3%",
+      "signal_date": "2026-08-24",
+      "close": 740.0,
+      "metrics": {
+        "yesterday_change_pct": 6.39,
+        "today_change_pct": -5.49,
+        "volume": 4915572,
+        "prev5_avg_volume": 1429445,
+        "volume_ratio": 3.44,
+        "high3": 793.0,
+        "high5": 793.0
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "3665",
+      "name": "貿聯-KY",
+      "strategy": "S3",
+      "side": "short",
+      "strategy_desc": "S3(賣空：爆量+向下反轉)：近3日最高點為近5日最高點，今日量大於前5日均量2倍，且下跌超過3%",
+      "signal_date": "2026-08-24",
+      "close": 2050.0,
+      "metrics": {
+        "yesterday_change_pct": 1.11,
+        "today_change_pct": -9.89,
+        "volume": 4701899,
+        "prev5_avg_volume": 2301282,
+        "volume_ratio": 2.04,
+        "high3": 2360.0,
+        "high5": 2360.0
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "4763",
+      "name": "材料-KY",
+      "strategy": "S3",
+      "side": "short",
+      "strategy_desc": "S3(賣空：爆量+向下反轉)：近3日最高點為近5日最高點，今日量大於前5日均量2倍，且下跌超過3%",
+      "signal_date": "2026-08-24",
+      "close": 46.75,
+      "metrics": {
+        "yesterday_change_pct": -1.1,
+        "today_change_pct": -5.84,
+        "volume": 15952780,
+        "prev5_avg_volume": 5631200,
+        "volume_ratio": 2.83,
+        "high3": 51.1,
+        "high5": 51.1
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "4931",
+      "name": "新盛力",
+      "strategy": "S3",
+      "side": "short",
+      "strategy_desc": "S3(賣空：爆量+向下反轉)：近3日最高點為近5日最高點，今日量大於前5日均量2倍，且下跌超過3%",
+      "signal_date": "2026-08-24",
+      "close": 252.0,
+      "metrics": {
+        "yesterday_change_pct": 2.56,
+        "today_change_pct": -10.0,
+        "volume": 8074409,
+        "prev5_avg_volume": 1887264,
+        "volume_ratio": 4.28,
+        "high3": 280.0,
+        "high5": 280.0
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "4979",
+      "name": "華星光",
+      "strategy": "S3",
+      "side": "short",
+      "strategy_desc": "S3(賣空：爆量+向下反轉)：近3日最高點為近5日最高點，今日量大於前5日均量2倍，且下跌超過3%",
+      "signal_date": "2026-08-24",
+      "close": 558.0,
+      "metrics": {
+        "yesterday_change_pct": 1.23,
+        "today_change_pct": -3.29,
+        "volume": 12378461,
+        "prev5_avg_volume": 5001902,
+        "volume_ratio": 2.47,
+        "high3": 605.0,
+        "high5": 605.0
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "13:30:01",
+      "timezone": "Asia/Taipei",
+      "symbol": "9958",
+      "name": "世紀鋼",
+      "strategy": "S3",
+      "side": "short",
+      "strategy_desc": "S3(賣空：爆量+向下反轉)：近3日最高點為近5日最高點，今日量大於前5日均量2倍，且下跌超過3%",
+      "signal_date": "2026-08-24",
+      "close": 98.0,
+      "metrics": {
+        "yesterday_change_pct": 0.99,
+        "today_change_pct": -3.92,
+        "volume": 3807998,
+        "prev5_avg_volume": 1623552,
+        "volume_ratio": 2.35,
+        "high3": 104.0,
+        "high5": 104.0
+      }
+    },
     {
       "date": "2026-08-23",
       "time": "13:19:58",
